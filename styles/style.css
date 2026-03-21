@@ -82,6 +82,7 @@ ol {
 .result__video-container {
   width: 711px;
   height: 386px;
+  position: relative;
 }
 
 .result__video {
@@ -247,20 +248,13 @@ input[type="text"]:focus {
   height: 298px;
   overflow: scroll;
   overflow-x: hidden;
+  position: relative;
 }
 
 .content__list {
   display: flex;
   flex-direction: column;
   gap: 30px;
-}
-
-.result__video-container {
-  position: relative;
-}
-
-.content__list-container {
-  position: relative;
 }
 
 .content__list-item {
