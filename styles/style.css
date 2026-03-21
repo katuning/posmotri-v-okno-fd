@@ -14,7 +14,7 @@ html {
   align-items: center;
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
   inline-size: 1200px;
@@ -50,15 +50,15 @@ ol {
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
 }
 
 .visually-hidden {
   position: absolute;
-  inline-size: 1px;
-  block-size: 1px;
   overflow: hidden;
   clip: rect(0 0 0 0);
+  inline-size: 1px;
+  block-size: 1px;
   clip-path: inset(50%);
   white-space: nowrap;
 }
@@ -70,7 +70,6 @@ ol {
   gap: 30px;
   width: 1140px;
   height: 534px;
-
 }
 
 .result {
@@ -103,43 +102,43 @@ ol {
 }
 
 .search-form__fieldset-title {
+  margin-bottom: 5px;
   font-weight: 400;
   font-size: 18px;
-  margin-bottom: 5px;
 }
 
 .search-form__label {
   display: flex;
   align-items: center;
-  width: fit-content;
   gap: 5px;
+  width: fit-content;
   cursor: pointer;
 }
 
 .search-form__label-text {
-  font-size: 18px;
-  font-weight: 400px;
-  line-height: 100%;
   margin: 1px;
+  font-weight: 400px;
+  font-size: 18px;
+  line-height: 100%;
 }
 
-.search-form__label-text:hover {
+.search-form__label:hover {
   text-decoration: underline;
   text-decoration-thickness: 1px;
 }
 
 .search-form__textfield {
   width: 225px;
-  font-size: 18px;
-  font-family: 'Fira Sans Condensed';
-  font-weight: 400;
+  margin: 1px;
   border: none;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
   color: #fff;
+  font-family: "Fira Sans Condensed";
+  font-weight: 400;
+  font-size: 18px;
   background-color: transparent;
   appearance: none;
-  margin: 1px;
 }
 
 input[type="text"]:focus {
@@ -151,17 +150,12 @@ input[type="text"]:focus {
 }
 
 .search-form__textfield::placeholder {
-  color: rgb(255 255 255 / 0.7)
+  color: rgb(255 255 255 / 0.7);
 }
 
 .search-form__checkbox-list {
   display: flex;
   gap: 15px;
-
-}
-
-.search-form__checkbox {
-
 }
 
 .search-form__pseudo-checkbox {
@@ -174,36 +168,36 @@ input[type="text"]:focus {
 .search-form__pseudo-checkbox::after {
   content: "";
   display: block;
-  background-color: #fff;
   width: 100%;
   height: 100%;
   opacity: 0;
+  background-color: #fff;
 }
 
-.search-form__checkbox:checked {
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   opacity: 1;
 }
 
 .button {
-  background-color: transparent;
+  margin: 1px;
   border: 1px solid #fff;
+  color: #fff;
   font-weight: 700;
   font-size: 18px;
-  color: #fff;
-  margin: 1px;
+  background-color: transparent;
   cursor: pointer;
 }
 
 .search-form__submit-button {
+  align-self: end;
   width: 194px;
   height: 34px;
-  align-self: end;
 }
 
 .more-button {
+  width: 100%;
   padding-top: 6px;
   padding-bottom: 6px;
-  width: 100%;
 }
 
 .button:hover {
@@ -222,8 +216,6 @@ input[type="text"]:focus {
 .button:focus-visible {
   outline: 1px solid #fff;
 }
-
-/* начало селекторов с секции дитэилз */
 
 .content__details {
   display: flex;
@@ -263,31 +255,17 @@ input[type="text"]:focus {
   gap: 30px;
 }
 
-/* селекторы темплейтов */
-
-.preloader-template {
-
+.result__video-container {
+  position: relative;
 }
 
-.preloader {
-
-}
-
-.preloader-chasing-squares {
-
-}
-
-.square {
-
-}
-
-.cards-list-item-template {
-  
+.content__list-container {
+  position: relative;
 }
 
 .content__list-item {
-  padding-left: 3px;
   padding-right: 3px;
+  padding-left: 3px;
   cursor: pointer;
 }
 
@@ -325,25 +303,28 @@ input[type="text"]:focus {
   height: 103px;
 }
 
+.content__video-card-description-container:active {
+  background-color: #545050;
+}
+
 .content__video-card-title {
-  
+  overflow: hidden;
+
   font-family: Oswald;
   font-weight: 700;
   font-size: 30px;
   text-transform: uppercase;
-  overflow: hidden;
-  white-space: nowrap;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .content__video-card-description {
+  display: -webkit-box;
+  overflow: hidden;
   font-size: 18px;
   line-height: 16.2px;
-  display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
-  overflow: hidden;
-
 }
 
 .content__video-card-thumbnail {
@@ -355,17 +336,4 @@ input[type="text"]:focus {
 
 .content__card-link_current {
   background-color: #545050;
-}
-
-
-.error-template {
-
-}
-
-.error {
-
-}
-
-.error__title {
-
 }
