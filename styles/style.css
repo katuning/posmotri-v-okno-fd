@@ -69,7 +69,6 @@ ol {
   align-items: end;
   gap: 30px;
   width: 1140px;
-  height: 534px;
 }
 
 .result {
@@ -80,9 +79,9 @@ ol {
 }
 
 .result__video-container {
+  position: relative;
   width: 711px;
   height: 386px;
-  position: relative;
 }
 
 .result__video {
@@ -118,12 +117,12 @@ ol {
 
 .search-form__label-text {
   margin: 1px;
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 18px;
   line-height: 100%;
 }
 
-.search-form__label:hover {
+.search-form__label:hover .search-form__label-text {
   text-decoration: underline;
   text-decoration-thickness: 1px;
 }
@@ -135,7 +134,7 @@ ol {
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
   color: #fff;
-  font-family: "Fira Sans Condensed";
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 18px;
   background-color: transparent;
@@ -180,9 +179,11 @@ input[type="text"]:focus {
 }
 
 .button {
+  min-height: 34px;
   margin: 1px;
   border: 1px solid #fff;
   color: #fff;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 700;
   font-size: 18px;
   background-color: transparent;
@@ -192,11 +193,10 @@ input[type="text"]:focus {
 .search-form__submit-button {
   align-self: end;
   width: 194px;
-  height: 34px;
 }
 
 .more-button {
-  width: 100%;
+  min-width: 390px;
   padding-top: 6px;
   padding-bottom: 6px;
 }
@@ -216,6 +216,7 @@ input[type="text"]:focus {
 
 .button:focus-visible {
   outline: 1px solid #fff;
+  outline-offset: 2px;
 }
 
 .content__details {
@@ -241,14 +242,13 @@ input[type="text"]:focus {
 }
 
 .content__list-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 30px;
   width: 399px;
   height: 298px;
-  overflow: scroll;
-  overflow-x: hidden;
-  position: relative;
+  overflow: auto;
 }
 
 .content__list {
@@ -263,7 +263,7 @@ input[type="text"]:focus {
   cursor: pointer;
 }
 
-.content__list-item:hover {
+.content__card-link:hover {
   text-decoration: underline;
   text-decoration-thickness: 1px;
 }
@@ -277,6 +277,7 @@ input[type="text"]:focus {
 }
 
 .content__card-link {
+  display: block;
   color: #fff;
   text-decoration: none;
 }
@@ -294,19 +295,14 @@ input[type="text"]:focus {
 .content__video-card-description-container {
   flex-grow: 1;
   width: 196px;
-  height: 103px;
-}
-
-.content__video-card-description-container:active {
-  background-color: #545050;
 }
 
 .content__video-card-title {
   overflow: hidden;
-
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-weight: 700;
   font-size: 30px;
+  line-height: 100%;
   text-transform: uppercase;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -318,7 +314,7 @@ input[type="text"]:focus {
   font-size: 18px;
   line-height: 16.2px;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 4;
 }
 
 .content__video-card-thumbnail {
