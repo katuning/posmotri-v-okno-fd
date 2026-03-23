@@ -230,7 +230,7 @@ input[type="text"]:focus {
 
 .title {
   color: #fff;
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-weight: 700;
   font-size: 75px;
   line-height: 94%;
@@ -306,6 +306,7 @@ input[type="text"]:focus {
   text-transform: uppercase;
   text-overflow: ellipsis;
   white-space: nowrap;
+  padding-bottom: 4px;
 }
 
 .content__video-card-description {
